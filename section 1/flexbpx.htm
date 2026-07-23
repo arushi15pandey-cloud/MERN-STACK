@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .child{
+            background-color: lightcoral;
+            color: rgb(63, 20, 220);
+            font-size: 40px;
+            padding: 30px;
+            border: 2px solid rgb(21, 20, 20);
+        }
+
+        .parent{
+            display: flex;
+            flex flex-direction: column-reverse;
+
+            justify-content: flex-start;
+            align-items: flex-end;
+            gap: 20px;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+    </div>
+    
+</body>
+</html>

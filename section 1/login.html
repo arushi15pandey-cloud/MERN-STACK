@@ -10,11 +10,13 @@
     <style>
 
         .card{
-            border: 1px solid red;
+            border: 1px solid rgb(23, 23, 23);
             width: 20%;
             border-radius: 10px;
             padding: 30px;
             box-shadow: 3px 3px 10px 0px rgb(39, 38, 38);
+            box-sizing: border-box;
+            background-color: white;
         }
 
         body{
@@ -22,7 +24,49 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-image: linear-gradient(0deg,#baff,#ffcbcb ,#ffffc3);
+            /*background-image: url(https://tse4.mm.bing.net/th/id/OIP.IhRn9_BdGBPvU9iNYrne3QHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);*/
+            
         }
+
+        .form-title{
+            text-align: center;
+            font-size: 30px;
+        }
+        .text-input{
+            width: 100%;
+            display: block;
+            padding:10px ;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+
+        .btn-submit{
+            background-color: rgb(58, 18, 138);
+            color: white;
+            padding: 10px;
+            border: none;
+            display: block;
+            width: 100%;
+        }
+
+        .link{
+            display: block;
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        .forgot-link{
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .signup-link{
+            text-align: center;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -35,7 +79,16 @@
         <label for="">Password</label>
         <input type="password" class="text-input">
 
+        <a href="#" class="link forgot-link">Forgot Password</a>
+
+        
         <button class="btn-submit">Submit</button>
+
+        <a href="#" class="link signup-link">
+           Not Registered yet? signup Now
+        </a>
+
+
        </form>
        </div> 
 </body>
