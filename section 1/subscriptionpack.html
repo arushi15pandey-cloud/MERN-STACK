@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscription Cards</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f3f8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    width:1100px;
+    background:#fff;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+    padding:60px;
+    text-align:center;
+}
+
+.container h1{
+    font-size:42px;
+    color:#201c54;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.container .desc{
+    width:60%;
+    margin:auto;
+    color:#555;
+    font-size:17px;
+    line-height:1.6;
+    margin-bottom:60px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:50px;
+}
+
+.card{
+    position:relative;
+    width:260px;
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    text-align:left;
+    z-index:1;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:-18px;
+    left:-18px;
+    border-radius:18px;
+    z-index:-1;
+}
+
+.yellow::before{
+    background:#fff8db;
+}
+
+.pink::before{
+    background:#fde8ff;
+}
+
+.blue::before{
+    background:#eef0ff;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.logo.purple{
+    color:#8b24ff;
+}
+
+.logo.blue{
+    color:#0d9df1;
+}
+
+.card h2{
+    font-size:24px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.price{
+    font-size:36px;
+    font-weight:bold;
+    color:#222;
+    margin-bottom:30px;
+}
+
+.price span{
+    font-size:18px;
+    font-weight:normal;
+}
+
+.card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    background:#ececff;
+    color:#221d58;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#dddfff;
+}
+
+.main-btn{
+    background:#201c54;
+    color:#fff;
+    border:none;
+    padding:18px 45px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.main-btn:hover{
+    background:#2d2672;
+}
+
+@media(max-width:900px){
+
+.container{
+    width:100%;
+    padding:40px 20px;
+}
+
+.container h1{
+    font-size:30px;
+}
+
+.container .desc{
+    width:100%;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+.card{
+    width:300px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+Get the most out of your mobile<br>
+with the right subscription
+</h1>
+
+<p class="desc">
+All devices come with free delivery or pickup as standard.
+See information on available shopping options for your location.
+</p>
+
+<div class="cards">
+
+<div class="card yellow">
+<div class="logo">ice</div>
+
+<h2>Ice Mobile 10GB</h2>
+
+<p>Up to 100Mbit/s</p>
+
+<div class="price">
+299,- <span>/month</span>
+</div>
+
+<button>Add subscription</button>
+
+</div>
+
+<div class="card pink">
+
+<div class="logo purple">Telia</div>
+
+<h2>Telia Mobil 15GB</h2>
+
+<p>Unlimited calls, SMS and MMS</p>
+
+<div class="price">
+953,- <span>/month</span>
+</div>
+
+<button>Add subscription</button>
+
+</div>
+
+<div class="card blue">
+
+<div class="logo blue">Telenor</div>
+
+<h2>Telenor Next Fast</h2>
+
+<p>Up to 100Mbit/s</p>
+
+<div class="price">
+1028,- <span>/month</span>
+</div>
+
+<button>Add subscription</button>
+
+</div>
+
+</div>
+
+<button class="main-btn">
+See all subscriptions
+</button>
+
+</div>
+
+</body>
+</html>
