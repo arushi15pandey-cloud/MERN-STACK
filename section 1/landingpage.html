@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"></Link>
 </head>
 <body class="bg-yellow-100 md:bg blue:100">
     <header>
@@ -16,21 +17,21 @@
 
             <section class="h-[80vh]">
                 <div class="h-full container mx-auto">
-                    <div class="h-full grid grid-cols-2">
-                        <div class="space-y-6 my-auto">
+                    <div class="h-full grid grid-cols-1 md:grid-cols-2">
+                        <div class="space-y-6 my-auto text-center md:text-left">
                             <h1 class="text-5xl font-bold">Hero Section</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem quisquam facilis ex quia eum quam. Dolores est dolore nobis illum voluptatem expedita deleniti officia velit vel praesentium! Quasi, accusamus!</p>
-                            <div class="flex-gap-4">
+                            <div class="flex-gap-4 justify-center md:justify-start">
                                 <button class="hover: scale-110 duration-300 bg-gradient-to-br from-violet-400 to-pink-400 text-white border px-3 py-2 rounded">
                                     Get Started
                                 </button>
 
-                                <button class="border px-4 py-2 rounded">
+                                <button class=" px-3 py-2 rounded">
                                     Explore
                                 </button>
                             </div>
                         </div>
-                        <div class="my-auto">
+                        <div class="my-auto order-first md:order-last">
                             <img class="w-3/4 mx-auto" src="hero.svg" alt="">
                         </div>
                         
@@ -40,6 +41,81 @@
 
                 
 
+            </section>
+        </article>
+        <article>
+
+            <section>
+                <div class="container mx-auto py-10">
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white rounded-lg p-8 text-center space-y-6">
+
+                            <i class="fa-solid fa-pen fa-5x"></i>
+
+                            <h2 class="text-3xl font-bold">
+                                Card Title 1
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusantium impedit facere tenetur reiciendis amet, provident ipsa iusto nulla perspiciatis necessitatibus eum! Odit magni veniam ipsam quaerat voluptatibus odio id!
+                            </p>
+
+                            <button class="bg-blue-500 text-white p-3 rounded w-full">
+                                Explore
+                            </button>
+
+                        </div>
+                        <div class="bg-white rounded-lg p-8 text-center space-y-6">
+
+                            <i class="fa-solid fa-pen fa-5x"></i>
+
+                            <h2 class="text-3xl font-bold">
+                                Card Title 2
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusantium impedit facere tenetur reiciendis amet, provident ipsa iusto nulla perspiciatis necessitatibus eum! Odit magni veniam ipsam quaerat voluptatibus odio id!
+                            </p>
+
+                            <button class="bg-blue-500 text-white p-3 rounded w-full">
+                                Explore
+                            </button>
+
+                        </div>
+                        <div class="bg-white rounded-lg p-8 text-center space-y-6">
+
+                            <i class="fa-solid fa-pen fa-5x"></i>
+
+                            <h2 class="text-3xl font-bold">
+                                Card Title 3
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusantium impedit facere tenetur reiciendis amet, provident ipsa iusto nulla perspiciatis necessitatibus eum! Odit magni veniam ipsam quaerat voluptatibus odio id!
+                            </p>
+
+                            <button class="bg-blue-500 text-white p-3 rounded w-full">
+                                Explore
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+            <section>
+                <div class="container mx-auto">
+                    <div class="flex gap-3 w-1/2 mx-auto">
+                        <div class="relative w-full">
+                        <input class="border bg-white border p-2 rounded-full w-full" type="text">
+                        <i class= " absolute left-2 top-3 fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <button class="over: scale-110 duration-300 bg-gradient-to-br from-red-400 to-pink-400 text-white border px-4 py-2 rounded-full ">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                
             </section>
         </article>
 
