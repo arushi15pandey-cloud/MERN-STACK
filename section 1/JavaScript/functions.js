@@ -36,11 +36,15 @@ console.log(fact);
 
 // write a function check if a number is prime
 
-/*const primenum=function(n)=>{
-    for(i=1;i<=n;i++){
-        if(i%1===0&&i%i===0){
-            console.log(i);
+const checkprime=(n) => {
+    let prime= true;
+    for(let i=2; i<n;i++){
+        if(n%i===0){
+        prime=false;
+        break;
         }
     }
-
-}*/
+if(prime)return true;
+return false;
+console.log(checkprime(45));
+}
